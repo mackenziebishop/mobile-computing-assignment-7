@@ -9,6 +9,20 @@ import UIKit
 
 class MoviesViewController: UIViewController {
 
+    @IBOutlet weak var movieCollectionView: UICollectionView!
+    
+    @IBOutlet weak var movieNameLabel: UILabel!
+    
+    @IBOutlet weak var movieRatingLabel: UILabel!
+    
+    @IBOutlet weak var movieBoxOfficeLabel: UILabel!
+    
+    @IBOutlet weak var movieYearLabel: UILabel!
+    
+    @IBOutlet weak var moviePlotLabel: UILabel!
+    
+    @IBOutlet weak var movieCastLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
