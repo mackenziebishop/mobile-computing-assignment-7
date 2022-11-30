@@ -7,8 +7,36 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
-
+class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return movies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = movieCollectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
+        
+        cell.assignMovie(with: movies[indexPath.row])
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        assignMovieDetails(index: indexPath)
+    }
+    
+    func assignMovieDetails(index: IndexPath){
+        movieNameLabel.text = "Movie Name: \(movies[index.row].title)"
+        movieRatingLabel.text = "Movie Rating: \(movies[index.row].movieRating)"
+        movieBoxOfficeLabel.text = "Box Office Collection: \(movies[index.row].boxOffice)"
+        movieYearLabel.text = "Movie Released Year: \(movies[index.row].releasedYear)"
+        moviePlotLabel.text = "Plot: \(movies[index.row].moviePlot)"
+        movieCastLabel.text = "Cast: \(movies[index.row].cast)"
+    }
+    var movies = [Movie]()
+    
+    var genres : Genre?
+    
     @IBOutlet weak var movieCollectionView: UICollectionView!
     
     @IBOutlet weak var movieNameLabel: UILabel!
@@ -27,6 +55,10 @@ class MoviesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        movieCollectionView.delegate = self
+        movieCollectionView.dataSource = self
+
     }
     
 
