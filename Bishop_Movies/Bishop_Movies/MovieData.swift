@@ -22,5 +22,6 @@ struct Movie{
 //Genre struct
 struct Genre{
     let category:String
-    let movies:[Movie] = []
+    let movies:[Movie] = [
+    ]
 }
