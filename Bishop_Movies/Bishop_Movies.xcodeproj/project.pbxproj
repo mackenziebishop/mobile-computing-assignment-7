@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5371E4252937E0E100D1026A /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5371E4242937E0E100D1026A /* MovieCollectionViewCell.swift */; };
+		5371E4272937E2A600D1026A /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5371E4262937E2A600D1026A /* MovieData.swift */; };
 		53E5C28929371D8C00385F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5C28829371D8C00385F77 /* AppDelegate.swift */; };
 		53E5C28B29371D8C00385F77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5C28A29371D8C00385F77 /* SceneDelegate.swift */; };
 		53E5C28D29371D8C00385F77 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5C28C29371D8C00385F77 /* GenreViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5371E4242937E0E100D1026A /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		5371E4262937E2A600D1026A /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		53E5C28529371D8C00385F77 /* Bishop_Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bishop_Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E5C28829371D8C00385F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E5C28A29371D8C00385F77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				53E5C29629371D8E00385F77 /* Info.plist */,
 				53E5C2B82937292900385F77 /* MoviesViewController.swift */,
 				5371E4242937E0E100D1026A /* MovieCollectionViewCell.swift */,
+				5371E4262937E2A600D1026A /* MovieData.swift */,
 			);
 			path = Bishop_Movies;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5371E4272937E2A600D1026A /* MovieData.swift in Sources */,
 				53E5C28D29371D8C00385F77 /* GenreViewController.swift in Sources */,
 				53E5C28929371D8C00385F77 /* AppDelegate.swift in Sources */,
 				5371E4252937E0E100D1026A /* MovieCollectionViewCell.swift in Sources */,

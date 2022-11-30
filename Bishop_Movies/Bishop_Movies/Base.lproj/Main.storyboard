@@ -28,6 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ktH-PI-keO" kind="show" identifier="movieSegue" id="IlT-FV-1a2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -59,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z0q-5u-OUW">
-                                <rect key="frame" x="5" y="49" width="404" height="300"/>
+                                <rect key="frame" x="5" y="93" width="404" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="JGj-LK-ND5"/>
@@ -82,7 +85,7 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uyn-xY-ozT">
-                                <rect key="frame" x="20" y="369" width="374" height="123"/>
+                                <rect key="frame" x="20" y="413" width="374" height="123"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-zE-oCf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
@@ -134,6 +137,7 @@
                             <constraint firstItem="srj-rY-zGA" firstAttribute="trailing" secondItem="Uyn-xY-ozT" secondAttribute="trailing" constant="20" id="y5O-Oq-guL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Nig-Kk-ftM"/>
                     <connections>
                         <outlet property="movieBoxOfficeLabel" destination="WHg-fx-RBW" id="7Bw-hf-ycX"/>
                         <outlet property="movieCastLabel" destination="XFE-Y0-FlB" id="0Gz-A8-dH1"/>
